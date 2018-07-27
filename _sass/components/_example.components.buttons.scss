@@ -23,20 +23,16 @@
   text-align: center; /* [4] */
   margin: 0; /* [4] */
   cursor: pointer; /* [5] */
-  padding: 11px $inuit-global-spacing-unit;
+  padding: 16px $inuit-global-spacing-unit;
   transition: $global-transition;
-  border-radius: 100px;
+  border-radius: 3px;
 }
-
-
-
-
 
 /* Style variants
    ========================================================================== */
 
 .c-btn--primary {
-  background-color: $color-2;
+  background-color: $color-1;
 
   &,
   &:hover,
@@ -128,7 +124,8 @@ $btn-ghost-border-width: 2px;
   }
 
   &.c-btn--secondary {
-    color: #2f4054;
+    background-color: $color-white;
+    color: $color-blue;
 
     &:hover,
     &:focus {
@@ -147,4 +144,30 @@ $btn-ghost-border-width: 2px;
 
   }
 
+}
+
+
+.c-btn--icon {
+  position: relative;
+  padding: 16px $inuit-global-spacing-unit 16px 56px;
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    font-family: $brand-font-family;
+    font-size: 32px;
+  }
+}
+
+.c-btn--icon-android {
+  &:before {
+    content: '\f17b';
+  }
+}
+
+.c-btn--icon-apple {
+  &:before {
+    content: '\f179';
+  }
 }

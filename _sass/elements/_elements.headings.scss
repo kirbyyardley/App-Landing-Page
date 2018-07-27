@@ -39,7 +39,7 @@ h2 {
 h3 {
   @include inuit-font-size($inuit-font-size-h3);
   @include mq($until: tablet) {
-    @include inuit-font-size(26px);
+    @include inuit-font-size(28px);
   }
 }
 
@@ -64,25 +64,19 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font-family;
   letter-spacing: 0.05em;
+  margin-bottom: 12px;
 }
 
 h1, h2 {
-  line-height: 1em;
-}
-
-h1 {
-  color: $color-white;
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  color: $color-2;
+  font-weight: 600;
 }
 
 h3 {
-  line-height: 1.2;
-  color: $color-2;
+  font-weight: 500;
+}
+
+h1, h2, h3 {
+  color: $color-1;
 }
 
 h4 {
@@ -90,7 +84,6 @@ h4 {
   color: $color-2;
 }
 
-h1, h2, h3, h4 {font-weight: 900;}
 
 h5, h6 {
   color: $color-2;
