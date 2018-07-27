@@ -1,0 +1,58 @@
+.c-modal-window {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.87);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c-modal-window:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.c-modal-window>div {
+  width: 100%;
+  max-width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 48px 24px;
+  background: #ffffff;
+  color: #333333;
+}
+
+.c-modal-window header {
+  font-weight: bold;
+}
+
+.c-modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+
+.c-modal-close:hover {
+  color: #000;
+}
+
+.c-modal-window h3 {
+}
+
+i {
+  vertical-align: middle;
+}

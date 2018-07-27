@@ -1,24 +1,83 @@
-.s-heroimage--desktop {
-  position: absolute;
-  bottom: 0;
-  right: 100px;
-  width: 40%;
-  max-width: 500px;
-  @include mq($until: desktop) {
-    display:none;
-  }
-}
-
-.s-heroimage--mobile {
-  margin-top: $inuit-global-spacing-unit*2;
-  width: 50%;
-  @include mq($from: desktop) {
-    display: none;
-  }
+.s-hero {
+  clear: both;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 1000px;
+  position: relative;
+  height: auto;
+  display:block;
 }
 
 .s-hero-background {
-  background: url('/assets/img/hero-background.jpg') center center no-repeat;
-  background-attachment: fixed;
+  height: 550px;
+  padding-top: 66px;
+  background-image: url(/assets/img/hero-background.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.s-hero__text {
+  float: left;
+  padding: 48px 12px 0px 24px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.s-hero__text * {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .s-hero-background {
+      height: 100vh !important;
+      overflow:hidden;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), not all, not all, not all, only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .s-hero__image {
+    background-image: url(/assets/img/phonescreen.png);
+  }
+}
+
+.s-hero__image {
+  float: right;
+  height: 484px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 530px) {
+  .s-hero__image {
+    background-size: contain;
+    height: 0;
+    padding-top: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .s-hero {
+    text-align: center;
+    padding: 0;
+  }
+  .s-hero__text {
+    padding: 24px 10px 0px 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .s-hero__image {
+    width: 100%;
+  }
 }

@@ -50,19 +50,19 @@
 }
 
 .c-btn--secondary {
-  background-color: #2f4054;
+  background-color: $color-white;
 
   &,
   &:hover,
   &:active,
   &:focus {
     text-decoration: none;
-    color: #fff;
+    color: $color-1;
   }
 
   &:hover,
   &:focus {
-    background-color: #1d2733;
+    // background-color: #1d2733;
   }
 
 }
@@ -169,5 +169,14 @@ $btn-ghost-border-width: 2px;
 .c-btn--icon-apple {
   &:before {
     content: '\f179';
+  }
+}
+
+@include mq($until: tablet) {
+  .c-btn--icon {
+    padding: 12px $inuit-global-spacing-unit 12px 48px;
+    &:before {
+      font-size: 24px;
+    }
   }
 }
