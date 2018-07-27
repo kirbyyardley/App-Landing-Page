@@ -10,7 +10,7 @@
 }
 
 .s-hero-background {
-  height: 550px;
+  height: 700px;
   padding-top: 66px;
   background-image: url('/assets/img/hero-background.jpg');
   background-size: cover;
@@ -34,7 +34,7 @@
 
 @media only screen and (max-width: 900px) {
   .s-hero-background {
-      height: 100vh !important;
+      height: 120vh !important;
       overflow:hidden;
   }
 }
@@ -47,7 +47,7 @@
 
 .s-hero__image {
   float: right;
-  height: 484px;
+  height: 634px;
   background-repeat: no-repeat;
   background-position: center bottom;
   -webkit-background-size: auto 100%;

@@ -53,13 +53,7 @@ p ~ h3, ul ~ h3 {
   margin-top: $inuit-global-spacing-unit*2;
 }
 
-p > a {
-  border-bottom: solid 3px $color-1;
-  transition: border-bottom 0.2s ease;
-  &:hover {
-    border-bottom: solid 3px darken($color-1, 15%);
-  }
-}
+
 
 a {
   color: inherit;
