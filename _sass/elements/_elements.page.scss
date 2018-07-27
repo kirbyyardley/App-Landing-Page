@@ -68,7 +68,7 @@ a {
 
 input, textarea {
   width: 100%;
-  padding: 11px $inuit-global-spacing-unit-tiny;
+  padding: 16px $inuit-global-spacing-unit;
   margin-bottom: 24px;
 }
 
@@ -89,7 +89,7 @@ select {
 input,
 select,
 textarea {
-  border: solid 2px lighten($color-black, 85%);
+  border: solid 2px $color-1;
   border-radius: 2px;
 }
 

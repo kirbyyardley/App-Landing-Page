@@ -12,7 +12,7 @@
 .s-hero-background {
   height: 550px;
   padding-top: 66px;
-  background-image: url(/assets/img/hero-background.jpg);
+  background-image: url('/assets/img/hero-background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -41,7 +41,7 @@
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), not all, not all, not all, only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .s-hero__image {
-    background-image: url(/assets/img/phonescreen.png);
+    background-image: url('/assets/img/phonescreen.png');
   }
 }
 
